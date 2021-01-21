@@ -1,0 +1,12 @@
+% ly1atrainone.fd
+\DeclareFontFamily{LY1}{atrainone}{}
+\DeclareFontShape{LY1}{atrainone}{m}{n}{<->trainone-r-ly1}{}
+\DeclareFontShape{LY1}{atrainone}{m}{it}{<->ssub*atrainone/m/sl}{}
+\DeclareFontShape{LY1}{atrainone}{m}{sl}{<->trainone-ro-ly1}{}
+\DeclareFontShape{LY1}{atrainone}{b}{n}{<->ssub*atrainone/m/n}{}
+\DeclareFontShape{LY1}{atrainone}{b}{it}{<->ssub*atrainone/b/sl}{}
+\DeclareFontShape{LY1}{atrainone}{b}{sl}{<->ssub*atrainone/m/sl}{}
+\DeclareFontShape{LY1}{atrainone}{bx}{n}{<->ssub*atrainone/m/n}{}
+\DeclareFontShape{LY1}{atrainone}{bx}{it}{<->ssub*atrainone/bx/sl}{}
+\DeclareFontShape{LY1}{atrainone}{bx}{sl}{<->ssub*atrainone/m/sl}{}
+%% EOF

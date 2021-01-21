@@ -1,0 +1,12 @@
+% ot1arocknrollone.fd
+\DeclareFontFamily{OT1}{arocknrollone}{}
+\DeclareFontShape{OT1}{arocknrollone}{m}{n}{<->rocknrollone-r-ot1}{}
+\DeclareFontShape{OT1}{arocknrollone}{m}{it}{<->ssub*arocknrollone/m/sl}{}
+\DeclareFontShape{OT1}{arocknrollone}{m}{sl}{<->rocknrollone-ro-ot1}{}
+\DeclareFontShape{OT1}{arocknrollone}{b}{n}{<->ssub*arocknrollone/m/n}{}
+\DeclareFontShape{OT1}{arocknrollone}{b}{it}{<->ssub*arocknrollone/b/sl}{}
+\DeclareFontShape{OT1}{arocknrollone}{b}{sl}{<->ssub*arocknrollone/m/sl}{}
+\DeclareFontShape{OT1}{arocknrollone}{bx}{n}{<->ssub*arocknrollone/m/n}{}
+\DeclareFontShape{OT1}{arocknrollone}{bx}{it}{<->ssub*arocknrollone/bx/sl}{}
+\DeclareFontShape{OT1}{arocknrollone}{bx}{sl}{<->ssub*arocknrollone/m/sl}{}
+%% EOF

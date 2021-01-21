@@ -1,0 +1,12 @@
+% ly1areggaeone.fd
+\DeclareFontFamily{LY1}{areggaeone}{}
+\DeclareFontShape{LY1}{areggaeone}{m}{n}{<->reggaeone-r-ly1}{}
+\DeclareFontShape{LY1}{areggaeone}{m}{it}{<->ssub*areggaeone/m/sl}{}
+\DeclareFontShape{LY1}{areggaeone}{m}{sl}{<->reggaeone-ro-ly1}{}
+\DeclareFontShape{LY1}{areggaeone}{b}{n}{<->ssub*areggaeone/m/n}{}
+\DeclareFontShape{LY1}{areggaeone}{b}{it}{<->ssub*areggaeone/b/sl}{}
+\DeclareFontShape{LY1}{areggaeone}{b}{sl}{<->ssub*areggaeone/m/sl}{}
+\DeclareFontShape{LY1}{areggaeone}{bx}{n}{<->ssub*areggaeone/m/n}{}
+\DeclareFontShape{LY1}{areggaeone}{bx}{it}{<->ssub*areggaeone/bx/sl}{}
+\DeclareFontShape{LY1}{areggaeone}{bx}{sl}{<->ssub*areggaeone/m/sl}{}
+%% EOF

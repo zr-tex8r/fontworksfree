@@ -1,0 +1,12 @@
+% ly1akleeone.fd
+\DeclareFontFamily{LY1}{akleeone}{}
+\DeclareFontShape{LY1}{akleeone}{m}{n}{<->kleeone-r-ly1}{}
+\DeclareFontShape{LY1}{akleeone}{m}{it}{<->ssub*akleeone/m/sl}{}
+\DeclareFontShape{LY1}{akleeone}{m}{sl}{<->kleeone-ro-ly1}{}
+\DeclareFontShape{LY1}{akleeone}{b}{n}{<->ssub*akleeone/bx/n}{}
+\DeclareFontShape{LY1}{akleeone}{b}{it}{<->ssub*akleeone/b/sl}{}
+\DeclareFontShape{LY1}{akleeone}{b}{sl}{<->ssub*akleeone/bx/sl}{}
+\DeclareFontShape{LY1}{akleeone}{bx}{n}{<->kleeone-b-ly1}{}
+\DeclareFontShape{LY1}{akleeone}{bx}{it}{<->ssub*akleeone/bx/sl}{}
+\DeclareFontShape{LY1}{akleeone}{bx}{sl}{<->kleeone-bo-ly1}{}
+%% EOF

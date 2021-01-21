@@ -1,0 +1,12 @@
+% ts1atrainone.fd
+\DeclareFontFamily{TS1}{atrainone}{}
+\DeclareFontShape{TS1}{atrainone}{m}{n}{<->trainone-r-ts1}{}
+\DeclareFontShape{TS1}{atrainone}{m}{it}{<->ssub*atrainone/m/sl}{}
+\DeclareFontShape{TS1}{atrainone}{m}{sl}{<->trainone-ro-ts1}{}
+\DeclareFontShape{TS1}{atrainone}{b}{n}{<->ssub*atrainone/m/n}{}
+\DeclareFontShape{TS1}{atrainone}{b}{it}{<->ssub*atrainone/b/sl}{}
+\DeclareFontShape{TS1}{atrainone}{b}{sl}{<->ssub*atrainone/m/sl}{}
+\DeclareFontShape{TS1}{atrainone}{bx}{n}{<->ssub*atrainone/m/n}{}
+\DeclareFontShape{TS1}{atrainone}{bx}{it}{<->ssub*atrainone/bx/sl}{}
+\DeclareFontShape{TS1}{atrainone}{bx}{sl}{<->ssub*atrainone/m/sl}{}
+%% EOF

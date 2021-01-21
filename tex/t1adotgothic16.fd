@@ -1,0 +1,12 @@
+% t1adotgothic16.fd
+\DeclareFontFamily{T1}{adotgothic16}{}
+\DeclareFontShape{T1}{adotgothic16}{m}{n}{<->dotgothic16-r-t1}{}
+\DeclareFontShape{T1}{adotgothic16}{m}{it}{<->ssub*adotgothic16/m/sl}{}
+\DeclareFontShape{T1}{adotgothic16}{m}{sl}{<->dotgothic16-ro-t1}{}
+\DeclareFontShape{T1}{adotgothic16}{b}{n}{<->ssub*adotgothic16/m/n}{}
+\DeclareFontShape{T1}{adotgothic16}{b}{it}{<->ssub*adotgothic16/b/sl}{}
+\DeclareFontShape{T1}{adotgothic16}{b}{sl}{<->ssub*adotgothic16/m/sl}{}
+\DeclareFontShape{T1}{adotgothic16}{bx}{n}{<->ssub*adotgothic16/m/n}{}
+\DeclareFontShape{T1}{adotgothic16}{bx}{it}{<->ssub*adotgothic16/bx/sl}{}
+\DeclareFontShape{T1}{adotgothic16}{bx}{sl}{<->ssub*adotgothic16/m/sl}{}
+%% EOF

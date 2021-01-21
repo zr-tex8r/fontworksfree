@@ -1,0 +1,12 @@
+% ly1arocknrollone.fd
+\DeclareFontFamily{LY1}{arocknrollone}{}
+\DeclareFontShape{LY1}{arocknrollone}{m}{n}{<->rocknrollone-r-ly1}{}
+\DeclareFontShape{LY1}{arocknrollone}{m}{it}{<->ssub*arocknrollone/m/sl}{}
+\DeclareFontShape{LY1}{arocknrollone}{m}{sl}{<->rocknrollone-ro-ly1}{}
+\DeclareFontShape{LY1}{arocknrollone}{b}{n}{<->ssub*arocknrollone/m/n}{}
+\DeclareFontShape{LY1}{arocknrollone}{b}{it}{<->ssub*arocknrollone/b/sl}{}
+\DeclareFontShape{LY1}{arocknrollone}{b}{sl}{<->ssub*arocknrollone/m/sl}{}
+\DeclareFontShape{LY1}{arocknrollone}{bx}{n}{<->ssub*arocknrollone/m/n}{}
+\DeclareFontShape{LY1}{arocknrollone}{bx}{it}{<->ssub*arocknrollone/bx/sl}{}
+\DeclareFontShape{LY1}{arocknrollone}{bx}{sl}{<->ssub*arocknrollone/m/sl}{}
+%% EOF

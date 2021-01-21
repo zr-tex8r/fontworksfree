@@ -1,0 +1,12 @@
+% ot1areggaeone.fd
+\DeclareFontFamily{OT1}{areggaeone}{}
+\DeclareFontShape{OT1}{areggaeone}{m}{n}{<->reggaeone-r-ot1}{}
+\DeclareFontShape{OT1}{areggaeone}{m}{it}{<->ssub*areggaeone/m/sl}{}
+\DeclareFontShape{OT1}{areggaeone}{m}{sl}{<->reggaeone-ro-ot1}{}
+\DeclareFontShape{OT1}{areggaeone}{b}{n}{<->ssub*areggaeone/m/n}{}
+\DeclareFontShape{OT1}{areggaeone}{b}{it}{<->ssub*areggaeone/b/sl}{}
+\DeclareFontShape{OT1}{areggaeone}{b}{sl}{<->ssub*areggaeone/m/sl}{}
+\DeclareFontShape{OT1}{areggaeone}{bx}{n}{<->ssub*areggaeone/m/n}{}
+\DeclareFontShape{OT1}{areggaeone}{bx}{it}{<->ssub*areggaeone/bx/sl}{}
+\DeclareFontShape{OT1}{areggaeone}{bx}{sl}{<->ssub*areggaeone/m/sl}{}
+%% EOF

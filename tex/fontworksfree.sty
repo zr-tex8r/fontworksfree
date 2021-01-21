@@ -1,0 +1,263 @@
+% This is file 'fontworksfree.sty'.
+
+%% package declaration
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{fontworksfree}[2021/01/21 v0.2]
+
+%--------------------------------------- preparations
+
+\RequirePackage{iftex,ifpdf,ifptex}
+\if \ifpdf T\else\ifXeTeX T\else\ifLuaTeX T\else F\fi\fi\fi T%
+  \PackageError{fontworksfree}
+   {The engine in use is not supported}
+   {Package loading is aborted.}
+\expandafter\endinput\fi\relax
+\AtBeginDvi{\special{pdf:mapfile pdfm-fontworksfree.map}}
+\ifptex
+  \edef\bxqff@N{\ifuptex 2\else 1\fi}
+  \let\bxqff@scl\@empty
+  \begingroup
+    \dimen@=\ifx\Cjascale\@undefined\else\Cjascale\fi\p@
+    \ifuptex\else \dimen@=1.03927\dimen@ \fi
+    \ifdim\dimen@=\p@ \else
+      \xdef\bxqff@scl{s*[\strip@pt\dimen@]}
+    \fi
+  \endgroup
+\fi
+
+%--------------------------------------- font declarations
+%% family 'DotGothic16'
+\ifptex
+\DeclareFontFamily{JY\bxqff@N}{dotgothic16}{}
+\DeclareFontFamily{JT\bxqff@N}{dotgothic16}{}
+\DeclareFontShape{JY\bxqff@N}{dotgothic16}{m}{n}{<->\bxqff@scl dotgothic16-r-jy\bxqff@N}{}
+\DeclareFontShape{JT\bxqff@N}{dotgothic16}{m}{n}{<->\bxqff@scl dotgothic16-r-jt\bxqff@N}{}
+\DeclareFontShape{JY\bxqff@N}{dotgothic16}{m}{it}{<->ssub*dotgothic16/m/n}{}
+\DeclareFontShape{JT\bxqff@N}{dotgothic16}{m}{it}{<->ssub*dotgothic16/m/n}{}
+\DeclareFontShape{JY\bxqff@N}{dotgothic16}{m}{sl}{<->ssub*dotgothic16/m/n}{}
+\DeclareFontShape{JT\bxqff@N}{dotgothic16}{m}{sl}{<->ssub*dotgothic16/m/n}{}
+\DeclareFontShape{JY\bxqff@N}{dotgothic16}{bx}{n}{<->ssub*dotgothic16/m/n}{}
+\DeclareFontShape{JT\bxqff@N}{dotgothic16}{bx}{n}{<->ssub*dotgothic16/m/n}{}
+\DeclareFontShape{JY\bxqff@N}{dotgothic16}{bx}{it}{<->ssub*dotgothic16/m/it}{}
+\DeclareFontShape{JT\bxqff@N}{dotgothic16}{bx}{it}{<->ssub*dotgothic16/m/it}{}
+\DeclareFontShape{JY\bxqff@N}{dotgothic16}{bx}{sl}{<->ssub*dotgothic16/m/sl}{}
+\DeclareFontShape{JT\bxqff@N}{dotgothic16}{bx}{sl}{<->ssub*dotgothic16/m/sl}{}
+\DeclareFontShape{JY\bxqff@N}{dotgothic16}{b}{n}{<->ssub*dotgothic16/bx/n}{}
+\DeclareFontShape{JT\bxqff@N}{dotgothic16}{b}{n}{<->ssub*dotgothic16/bx/n}{}
+\DeclareFontShape{JY\bxqff@N}{dotgothic16}{b}{it}{<->ssub*dotgothic16/bx/it}{}
+\DeclareFontShape{JT\bxqff@N}{dotgothic16}{b}{it}{<->ssub*dotgothic16/bx/it}{}
+\DeclareFontShape{JY\bxqff@N}{dotgothic16}{b}{sl}{<->ssub*dotgothic16/bx/sl}{}
+\DeclareFontShape{JT\bxqff@N}{dotgothic16}{b}{sl}{<->ssub*dotgothic16/bx/sl}{}
+\DeclareRobustCommand*{\jdotgothic16family}{%
+  \not@math@alphabet\jdotgothic16family\relax\kanjifamily{dotgothic16}\selectfont}
+\DeclareRobustCommand*{\adotgothic16family}{%
+  \not@math@alphabet\adotgothic16family\relax\romanfamily{adotgothic16}\selectfont}
+\DeclareRobustCommand*{\dotgothic16family}{%
+  \not@math@alphabet\dotgothic16family\relax
+  \kanjifamily{dotgothic16}\romanfamily{adotgothic16}\selectfont}
+\else
+\DeclareRobustCommand*{\dotgothic16family}{%
+  \not@math@alphabet\dotgothic16family\relax\fontfamily{adotgothic16}\selectfont}
+\fi
+%% family 'KleeOne'
+\ifptex
+\DeclareFontFamily{JY\bxqff@N}{kleeone}{}
+\DeclareFontFamily{JT\bxqff@N}{kleeone}{}
+\DeclareFontShape{JY\bxqff@N}{kleeone}{m}{n}{<->\bxqff@scl kleeone-r-jy\bxqff@N}{}
+\DeclareFontShape{JT\bxqff@N}{kleeone}{m}{n}{<->\bxqff@scl kleeone-r-jt\bxqff@N}{}
+\DeclareFontShape{JY\bxqff@N}{kleeone}{m}{it}{<->ssub*kleeone/m/n}{}
+\DeclareFontShape{JT\bxqff@N}{kleeone}{m}{it}{<->ssub*kleeone/m/n}{}
+\DeclareFontShape{JY\bxqff@N}{kleeone}{m}{sl}{<->ssub*kleeone/m/n}{}
+\DeclareFontShape{JT\bxqff@N}{kleeone}{m}{sl}{<->ssub*kleeone/m/n}{}
+\DeclareFontShape{JY\bxqff@N}{kleeone}{bx}{n}{<->\bxqff@scl kleeone-b-jy\bxqff@N}{}
+\DeclareFontShape{JT\bxqff@N}{kleeone}{bx}{n}{<->\bxqff@scl kleeone-b-jt\bxqff@N}{}
+\DeclareFontShape{JY\bxqff@N}{kleeone}{bx}{it}{<->ssub*kleeone/bx/n}{}
+\DeclareFontShape{JT\bxqff@N}{kleeone}{bx}{it}{<->ssub*kleeone/bx/n}{}
+\DeclareFontShape{JY\bxqff@N}{kleeone}{bx}{sl}{<->ssub*kleeone/bx/n}{}
+\DeclareFontShape{JT\bxqff@N}{kleeone}{bx}{sl}{<->ssub*kleeone/bx/n}{}
+\DeclareFontShape{JY\bxqff@N}{kleeone}{b}{n}{<->ssub*kleeone/bx/n}{}
+\DeclareFontShape{JT\bxqff@N}{kleeone}{b}{n}{<->ssub*kleeone/bx/n}{}
+\DeclareFontShape{JY\bxqff@N}{kleeone}{b}{it}{<->ssub*kleeone/bx/it}{}
+\DeclareFontShape{JT\bxqff@N}{kleeone}{b}{it}{<->ssub*kleeone/bx/it}{}
+\DeclareFontShape{JY\bxqff@N}{kleeone}{b}{sl}{<->ssub*kleeone/bx/sl}{}
+\DeclareFontShape{JT\bxqff@N}{kleeone}{b}{sl}{<->ssub*kleeone/bx/sl}{}
+\DeclareRobustCommand*{\jkleeonefamily}{%
+  \not@math@alphabet\jkleeonefamily\relax\kanjifamily{kleeone}\selectfont}
+\DeclareRobustCommand*{\akleeonefamily}{%
+  \not@math@alphabet\akleeonefamily\relax\romanfamily{akleeone}\selectfont}
+\DeclareRobustCommand*{\kleeonefamily}{%
+  \not@math@alphabet\kleeonefamily\relax
+  \kanjifamily{kleeone}\romanfamily{akleeone}\selectfont}
+\else
+\DeclareRobustCommand*{\kleeonefamily}{%
+  \not@math@alphabet\kleeonefamily\relax\fontfamily{akleeone}\selectfont}
+\fi
+%% family 'RampartOne'
+\ifptex
+\DeclareFontFamily{JY\bxqff@N}{rampartone}{}
+\DeclareFontFamily{JT\bxqff@N}{rampartone}{}
+\DeclareFontShape{JY\bxqff@N}{rampartone}{m}{n}{<->\bxqff@scl rampartone-r-jy\bxqff@N}{}
+\DeclareFontShape{JT\bxqff@N}{rampartone}{m}{n}{<->\bxqff@scl rampartone-r-jt\bxqff@N}{}
+\DeclareFontShape{JY\bxqff@N}{rampartone}{m}{it}{<->ssub*rampartone/m/n}{}
+\DeclareFontShape{JT\bxqff@N}{rampartone}{m}{it}{<->ssub*rampartone/m/n}{}
+\DeclareFontShape{JY\bxqff@N}{rampartone}{m}{sl}{<->ssub*rampartone/m/n}{}
+\DeclareFontShape{JT\bxqff@N}{rampartone}{m}{sl}{<->ssub*rampartone/m/n}{}
+\DeclareFontShape{JY\bxqff@N}{rampartone}{bx}{n}{<->ssub*rampartone/m/n}{}
+\DeclareFontShape{JT\bxqff@N}{rampartone}{bx}{n}{<->ssub*rampartone/m/n}{}
+\DeclareFontShape{JY\bxqff@N}{rampartone}{bx}{it}{<->ssub*rampartone/m/it}{}
+\DeclareFontShape{JT\bxqff@N}{rampartone}{bx}{it}{<->ssub*rampartone/m/it}{}
+\DeclareFontShape{JY\bxqff@N}{rampartone}{bx}{sl}{<->ssub*rampartone/m/sl}{}
+\DeclareFontShape{JT\bxqff@N}{rampartone}{bx}{sl}{<->ssub*rampartone/m/sl}{}
+\DeclareFontShape{JY\bxqff@N}{rampartone}{b}{n}{<->ssub*rampartone/bx/n}{}
+\DeclareFontShape{JT\bxqff@N}{rampartone}{b}{n}{<->ssub*rampartone/bx/n}{}
+\DeclareFontShape{JY\bxqff@N}{rampartone}{b}{it}{<->ssub*rampartone/bx/it}{}
+\DeclareFontShape{JT\bxqff@N}{rampartone}{b}{it}{<->ssub*rampartone/bx/it}{}
+\DeclareFontShape{JY\bxqff@N}{rampartone}{b}{sl}{<->ssub*rampartone/bx/sl}{}
+\DeclareFontShape{JT\bxqff@N}{rampartone}{b}{sl}{<->ssub*rampartone/bx/sl}{}
+\DeclareRobustCommand*{\jrampartonefamily}{%
+  \not@math@alphabet\jrampartonefamily\relax\kanjifamily{rampartone}\selectfont}
+\DeclareRobustCommand*{\arampartonefamily}{%
+  \not@math@alphabet\arampartonefamily\relax\romanfamily{arampartone}\selectfont}
+\DeclareRobustCommand*{\rampartonefamily}{%
+  \not@math@alphabet\rampartonefamily\relax
+  \kanjifamily{rampartone}\romanfamily{arampartone}\selectfont}
+\else
+\DeclareRobustCommand*{\rampartonefamily}{%
+  \not@math@alphabet\rampartonefamily\relax\fontfamily{arampartone}\selectfont}
+\fi
+%% family 'ReggaeOne'
+\ifptex
+\DeclareFontFamily{JY\bxqff@N}{reggaeone}{}
+\DeclareFontFamily{JT\bxqff@N}{reggaeone}{}
+\DeclareFontShape{JY\bxqff@N}{reggaeone}{m}{n}{<->\bxqff@scl reggaeone-r-jy\bxqff@N}{}
+\DeclareFontShape{JT\bxqff@N}{reggaeone}{m}{n}{<->\bxqff@scl reggaeone-r-jt\bxqff@N}{}
+\DeclareFontShape{JY\bxqff@N}{reggaeone}{m}{it}{<->ssub*reggaeone/m/n}{}
+\DeclareFontShape{JT\bxqff@N}{reggaeone}{m}{it}{<->ssub*reggaeone/m/n}{}
+\DeclareFontShape{JY\bxqff@N}{reggaeone}{m}{sl}{<->ssub*reggaeone/m/n}{}
+\DeclareFontShape{JT\bxqff@N}{reggaeone}{m}{sl}{<->ssub*reggaeone/m/n}{}
+\DeclareFontShape{JY\bxqff@N}{reggaeone}{bx}{n}{<->ssub*reggaeone/m/n}{}
+\DeclareFontShape{JT\bxqff@N}{reggaeone}{bx}{n}{<->ssub*reggaeone/m/n}{}
+\DeclareFontShape{JY\bxqff@N}{reggaeone}{bx}{it}{<->ssub*reggaeone/m/it}{}
+\DeclareFontShape{JT\bxqff@N}{reggaeone}{bx}{it}{<->ssub*reggaeone/m/it}{}
+\DeclareFontShape{JY\bxqff@N}{reggaeone}{bx}{sl}{<->ssub*reggaeone/m/sl}{}
+\DeclareFontShape{JT\bxqff@N}{reggaeone}{bx}{sl}{<->ssub*reggaeone/m/sl}{}
+\DeclareFontShape{JY\bxqff@N}{reggaeone}{b}{n}{<->ssub*reggaeone/bx/n}{}
+\DeclareFontShape{JT\bxqff@N}{reggaeone}{b}{n}{<->ssub*reggaeone/bx/n}{}
+\DeclareFontShape{JY\bxqff@N}{reggaeone}{b}{it}{<->ssub*reggaeone/bx/it}{}
+\DeclareFontShape{JT\bxqff@N}{reggaeone}{b}{it}{<->ssub*reggaeone/bx/it}{}
+\DeclareFontShape{JY\bxqff@N}{reggaeone}{b}{sl}{<->ssub*reggaeone/bx/sl}{}
+\DeclareFontShape{JT\bxqff@N}{reggaeone}{b}{sl}{<->ssub*reggaeone/bx/sl}{}
+\DeclareRobustCommand*{\jreggaeonefamily}{%
+  \not@math@alphabet\jreggaeonefamily\relax\kanjifamily{reggaeone}\selectfont}
+\DeclareRobustCommand*{\areggaeonefamily}{%
+  \not@math@alphabet\areggaeonefamily\relax\romanfamily{areggaeone}\selectfont}
+\DeclareRobustCommand*{\reggaeonefamily}{%
+  \not@math@alphabet\reggaeonefamily\relax
+  \kanjifamily{reggaeone}\romanfamily{areggaeone}\selectfont}
+\else
+\DeclareRobustCommand*{\reggaeonefamily}{%
+  \not@math@alphabet\reggaeonefamily\relax\fontfamily{areggaeone}\selectfont}
+\fi
+%% family 'RocknRollOne'
+\ifptex
+\DeclareFontFamily{JY\bxqff@N}{rocknrollone}{}
+\DeclareFontFamily{JT\bxqff@N}{rocknrollone}{}
+\DeclareFontShape{JY\bxqff@N}{rocknrollone}{m}{n}{<->\bxqff@scl rocknrollone-r-jy\bxqff@N}{}
+\DeclareFontShape{JT\bxqff@N}{rocknrollone}{m}{n}{<->\bxqff@scl rocknrollone-r-jt\bxqff@N}{}
+\DeclareFontShape{JY\bxqff@N}{rocknrollone}{m}{it}{<->ssub*rocknrollone/m/n}{}
+\DeclareFontShape{JT\bxqff@N}{rocknrollone}{m}{it}{<->ssub*rocknrollone/m/n}{}
+\DeclareFontShape{JY\bxqff@N}{rocknrollone}{m}{sl}{<->ssub*rocknrollone/m/n}{}
+\DeclareFontShape{JT\bxqff@N}{rocknrollone}{m}{sl}{<->ssub*rocknrollone/m/n}{}
+\DeclareFontShape{JY\bxqff@N}{rocknrollone}{bx}{n}{<->ssub*rocknrollone/m/n}{}
+\DeclareFontShape{JT\bxqff@N}{rocknrollone}{bx}{n}{<->ssub*rocknrollone/m/n}{}
+\DeclareFontShape{JY\bxqff@N}{rocknrollone}{bx}{it}{<->ssub*rocknrollone/m/it}{}
+\DeclareFontShape{JT\bxqff@N}{rocknrollone}{bx}{it}{<->ssub*rocknrollone/m/it}{}
+\DeclareFontShape{JY\bxqff@N}{rocknrollone}{bx}{sl}{<->ssub*rocknrollone/m/sl}{}
+\DeclareFontShape{JT\bxqff@N}{rocknrollone}{bx}{sl}{<->ssub*rocknrollone/m/sl}{}
+\DeclareFontShape{JY\bxqff@N}{rocknrollone}{b}{n}{<->ssub*rocknrollone/bx/n}{}
+\DeclareFontShape{JT\bxqff@N}{rocknrollone}{b}{n}{<->ssub*rocknrollone/bx/n}{}
+\DeclareFontShape{JY\bxqff@N}{rocknrollone}{b}{it}{<->ssub*rocknrollone/bx/it}{}
+\DeclareFontShape{JT\bxqff@N}{rocknrollone}{b}{it}{<->ssub*rocknrollone/bx/it}{}
+\DeclareFontShape{JY\bxqff@N}{rocknrollone}{b}{sl}{<->ssub*rocknrollone/bx/sl}{}
+\DeclareFontShape{JT\bxqff@N}{rocknrollone}{b}{sl}{<->ssub*rocknrollone/bx/sl}{}
+\DeclareRobustCommand*{\jrocknrollonefamily}{%
+  \not@math@alphabet\jrocknrollonefamily\relax\kanjifamily{rocknrollone}\selectfont}
+\DeclareRobustCommand*{\arocknrollonefamily}{%
+  \not@math@alphabet\arocknrollonefamily\relax\romanfamily{arocknrollone}\selectfont}
+\DeclareRobustCommand*{\rocknrollonefamily}{%
+  \not@math@alphabet\rocknrollonefamily\relax
+  \kanjifamily{rocknrollone}\romanfamily{arocknrollone}\selectfont}
+\else
+\DeclareRobustCommand*{\rocknrollonefamily}{%
+  \not@math@alphabet\rocknrollonefamily\relax\fontfamily{arocknrollone}\selectfont}
+\fi
+%% family 'Stick'
+\ifptex
+\DeclareFontFamily{JY\bxqff@N}{stick}{}
+\DeclareFontFamily{JT\bxqff@N}{stick}{}
+\DeclareFontShape{JY\bxqff@N}{stick}{m}{n}{<->\bxqff@scl stick-r-jy\bxqff@N}{}
+\DeclareFontShape{JT\bxqff@N}{stick}{m}{n}{<->\bxqff@scl stick-r-jt\bxqff@N}{}
+\DeclareFontShape{JY\bxqff@N}{stick}{m}{it}{<->ssub*stick/m/n}{}
+\DeclareFontShape{JT\bxqff@N}{stick}{m}{it}{<->ssub*stick/m/n}{}
+\DeclareFontShape{JY\bxqff@N}{stick}{m}{sl}{<->ssub*stick/m/n}{}
+\DeclareFontShape{JT\bxqff@N}{stick}{m}{sl}{<->ssub*stick/m/n}{}
+\DeclareFontShape{JY\bxqff@N}{stick}{bx}{n}{<->ssub*stick/m/n}{}
+\DeclareFontShape{JT\bxqff@N}{stick}{bx}{n}{<->ssub*stick/m/n}{}
+\DeclareFontShape{JY\bxqff@N}{stick}{bx}{it}{<->ssub*stick/m/it}{}
+\DeclareFontShape{JT\bxqff@N}{stick}{bx}{it}{<->ssub*stick/m/it}{}
+\DeclareFontShape{JY\bxqff@N}{stick}{bx}{sl}{<->ssub*stick/m/sl}{}
+\DeclareFontShape{JT\bxqff@N}{stick}{bx}{sl}{<->ssub*stick/m/sl}{}
+\DeclareFontShape{JY\bxqff@N}{stick}{b}{n}{<->ssub*stick/bx/n}{}
+\DeclareFontShape{JT\bxqff@N}{stick}{b}{n}{<->ssub*stick/bx/n}{}
+\DeclareFontShape{JY\bxqff@N}{stick}{b}{it}{<->ssub*stick/bx/it}{}
+\DeclareFontShape{JT\bxqff@N}{stick}{b}{it}{<->ssub*stick/bx/it}{}
+\DeclareFontShape{JY\bxqff@N}{stick}{b}{sl}{<->ssub*stick/bx/sl}{}
+\DeclareFontShape{JT\bxqff@N}{stick}{b}{sl}{<->ssub*stick/bx/sl}{}
+\DeclareRobustCommand*{\jstickfamily}{%
+  \not@math@alphabet\jstickfamily\relax\kanjifamily{stick}\selectfont}
+\DeclareRobustCommand*{\astickfamily}{%
+  \not@math@alphabet\astickfamily\relax\romanfamily{astick}\selectfont}
+\DeclareRobustCommand*{\stickfamily}{%
+  \not@math@alphabet\stickfamily\relax
+  \kanjifamily{stick}\romanfamily{astick}\selectfont}
+\else
+\DeclareRobustCommand*{\stickfamily}{%
+  \not@math@alphabet\stickfamily\relax\fontfamily{astick}\selectfont}
+\fi
+%% family 'TrainOne'
+\ifptex
+\DeclareFontFamily{JY\bxqff@N}{trainone}{}
+\DeclareFontFamily{JT\bxqff@N}{trainone}{}
+\DeclareFontShape{JY\bxqff@N}{trainone}{m}{n}{<->\bxqff@scl trainone-r-jy\bxqff@N}{}
+\DeclareFontShape{JT\bxqff@N}{trainone}{m}{n}{<->\bxqff@scl trainone-r-jt\bxqff@N}{}
+\DeclareFontShape{JY\bxqff@N}{trainone}{m}{it}{<->ssub*trainone/m/n}{}
+\DeclareFontShape{JT\bxqff@N}{trainone}{m}{it}{<->ssub*trainone/m/n}{}
+\DeclareFontShape{JY\bxqff@N}{trainone}{m}{sl}{<->ssub*trainone/m/n}{}
+\DeclareFontShape{JT\bxqff@N}{trainone}{m}{sl}{<->ssub*trainone/m/n}{}
+\DeclareFontShape{JY\bxqff@N}{trainone}{bx}{n}{<->ssub*trainone/m/n}{}
+\DeclareFontShape{JT\bxqff@N}{trainone}{bx}{n}{<->ssub*trainone/m/n}{}
+\DeclareFontShape{JY\bxqff@N}{trainone}{bx}{it}{<->ssub*trainone/m/it}{}
+\DeclareFontShape{JT\bxqff@N}{trainone}{bx}{it}{<->ssub*trainone/m/it}{}
+\DeclareFontShape{JY\bxqff@N}{trainone}{bx}{sl}{<->ssub*trainone/m/sl}{}
+\DeclareFontShape{JT\bxqff@N}{trainone}{bx}{sl}{<->ssub*trainone/m/sl}{}
+\DeclareFontShape{JY\bxqff@N}{trainone}{b}{n}{<->ssub*trainone/bx/n}{}
+\DeclareFontShape{JT\bxqff@N}{trainone}{b}{n}{<->ssub*trainone/bx/n}{}
+\DeclareFontShape{JY\bxqff@N}{trainone}{b}{it}{<->ssub*trainone/bx/it}{}
+\DeclareFontShape{JT\bxqff@N}{trainone}{b}{it}{<->ssub*trainone/bx/it}{}
+\DeclareFontShape{JY\bxqff@N}{trainone}{b}{sl}{<->ssub*trainone/bx/sl}{}
+\DeclareFontShape{JT\bxqff@N}{trainone}{b}{sl}{<->ssub*trainone/bx/sl}{}
+\DeclareRobustCommand*{\jtrainonefamily}{%
+  \not@math@alphabet\jtrainonefamily\relax\kanjifamily{trainone}\selectfont}
+\DeclareRobustCommand*{\atrainonefamily}{%
+  \not@math@alphabet\atrainonefamily\relax\romanfamily{atrainone}\selectfont}
+\DeclareRobustCommand*{\trainonefamily}{%
+  \not@math@alphabet\trainonefamily\relax
+  \kanjifamily{trainone}\romanfamily{atrainone}\selectfont}
+\else
+\DeclareRobustCommand*{\trainonefamily}{%
+  \not@math@alphabet\trainonefamily\relax\fontfamily{atrainone}\selectfont}
+\fi
+
+%--------------------------------------- done
+\endinput
+%% EOF

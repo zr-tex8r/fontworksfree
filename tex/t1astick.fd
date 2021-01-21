@@ -1,0 +1,12 @@
+% t1astick.fd
+\DeclareFontFamily{T1}{astick}{}
+\DeclareFontShape{T1}{astick}{m}{n}{<->stick-r-t1}{}
+\DeclareFontShape{T1}{astick}{m}{it}{<->ssub*astick/m/sl}{}
+\DeclareFontShape{T1}{astick}{m}{sl}{<->stick-ro-t1}{}
+\DeclareFontShape{T1}{astick}{b}{n}{<->ssub*astick/m/n}{}
+\DeclareFontShape{T1}{astick}{b}{it}{<->ssub*astick/b/sl}{}
+\DeclareFontShape{T1}{astick}{b}{sl}{<->ssub*astick/m/sl}{}
+\DeclareFontShape{T1}{astick}{bx}{n}{<->ssub*astick/m/n}{}
+\DeclareFontShape{T1}{astick}{bx}{it}{<->ssub*astick/bx/sl}{}
+\DeclareFontShape{T1}{astick}{bx}{sl}{<->ssub*astick/m/sl}{}
+%% EOF

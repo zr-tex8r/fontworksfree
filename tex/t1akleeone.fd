@@ -1,0 +1,12 @@
+% t1akleeone.fd
+\DeclareFontFamily{T1}{akleeone}{}
+\DeclareFontShape{T1}{akleeone}{m}{n}{<->kleeone-r-t1}{}
+\DeclareFontShape{T1}{akleeone}{m}{it}{<->ssub*akleeone/m/sl}{}
+\DeclareFontShape{T1}{akleeone}{m}{sl}{<->kleeone-ro-t1}{}
+\DeclareFontShape{T1}{akleeone}{b}{n}{<->ssub*akleeone/bx/n}{}
+\DeclareFontShape{T1}{akleeone}{b}{it}{<->ssub*akleeone/b/sl}{}
+\DeclareFontShape{T1}{akleeone}{b}{sl}{<->ssub*akleeone/bx/sl}{}
+\DeclareFontShape{T1}{akleeone}{bx}{n}{<->kleeone-b-t1}{}
+\DeclareFontShape{T1}{akleeone}{bx}{it}{<->ssub*akleeone/bx/sl}{}
+\DeclareFontShape{T1}{akleeone}{bx}{sl}{<->kleeone-bo-t1}{}
+%% EOF

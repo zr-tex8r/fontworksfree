@@ -1,0 +1,57 @@
+% pdfm-fontworksfree.map
+% family 'DotGothic16'
+r-dotgothic16-r-jy1 H dotgothic16-Regular.ttf
+r-dotgothic16-r-jy2 UniJIS-UTF16-H dotgothic16-Regular.ttf
+r-dotgothic16-r-jt1 V dotgothic16-Regular.ttf
+r-dotgothic16-r-jt2 UniJIS-UTF16-V dotgothic16-Regular.ttf
+dotgothic16-r-j40  Identity-H  dotgothic16-Regular.ttf
+dotgothic16-ro-j40  Identity-H  dotgothic16-Regular.ttf -s 0.167
+% family 'KleeOne'
+r-kleeone-r-jy1 H kleeone-Regular.ttf
+r-kleeone-r-jy2 UniJIS-UTF16-H kleeone-Regular.ttf
+r-kleeone-r-jt1 V kleeone-Regular.ttf
+r-kleeone-r-jt2 UniJIS-UTF16-V kleeone-Regular.ttf
+r-kleeone-b-jy1 H kleeone-Semibold.ttf
+r-kleeone-b-jy2 UniJIS-UTF16-H kleeone-Semibold.ttf
+r-kleeone-b-jt1 V kleeone-Semibold.ttf
+r-kleeone-b-jt2 UniJIS-UTF16-V kleeone-Semibold.ttf
+kleeone-r-j40  Identity-H  kleeone-Regular.ttf
+kleeone-ro-j40  Identity-H  kleeone-Regular.ttf -s 0.167
+kleeone-b-j40  Identity-H  kleeone-Semibold.ttf
+kleeone-bo-j40  Identity-H  kleeone-Semibold.ttf -s 0.167
+% family 'RampartOne'
+r-rampartone-r-jy1 H rampartone-Regular.ttf
+r-rampartone-r-jy2 UniJIS-UTF16-H rampartone-Regular.ttf
+r-rampartone-r-jt1 V rampartone-Regular.ttf
+r-rampartone-r-jt2 UniJIS-UTF16-V rampartone-Regular.ttf
+rampartone-r-j40  Identity-H  rampartone-Regular.ttf
+rampartone-ro-j40  Identity-H  rampartone-Regular.ttf -s 0.167
+% family 'ReggaeOne'
+r-reggaeone-r-jy1 H reggaeone-Regular.ttf
+r-reggaeone-r-jy2 UniJIS-UTF16-H reggaeone-Regular.ttf
+r-reggaeone-r-jt1 V reggaeone-Regular.ttf
+r-reggaeone-r-jt2 UniJIS-UTF16-V reggaeone-Regular.ttf
+reggaeone-r-j40  Identity-H  reggaeone-Regular.ttf
+reggaeone-ro-j40  Identity-H  reggaeone-Regular.ttf -s 0.167
+% family 'RocknRollOne'
+r-rocknrollone-r-jy1 H rocknrollone-Regular.ttf
+r-rocknrollone-r-jy2 UniJIS-UTF16-H rocknrollone-Regular.ttf
+r-rocknrollone-r-jt1 V rocknrollone-Regular.ttf
+r-rocknrollone-r-jt2 UniJIS-UTF16-V rocknrollone-Regular.ttf
+rocknrollone-r-j40  Identity-H  rocknrollone-Regular.ttf
+rocknrollone-ro-j40  Identity-H  rocknrollone-Regular.ttf -s 0.167
+% family 'Stick'
+r-stick-r-jy1 H stick-Regular.ttf
+r-stick-r-jy2 UniJIS-UTF16-H stick-Regular.ttf
+r-stick-r-jt1 V stick-Regular.ttf
+r-stick-r-jt2 UniJIS-UTF16-V stick-Regular.ttf
+stick-r-j40  Identity-H  stick-Regular.ttf
+stick-ro-j40  Identity-H  stick-Regular.ttf -s 0.167
+% family 'TrainOne'
+r-trainone-r-jy1 H trainone-Regular.ttf
+r-trainone-r-jy2 UniJIS-UTF16-H trainone-Regular.ttf
+r-trainone-r-jt1 V trainone-Regular.ttf
+r-trainone-r-jt2 UniJIS-UTF16-V trainone-Regular.ttf
+trainone-r-j40  Identity-H  trainone-Regular.ttf
+trainone-ro-j40  Identity-H  trainone-Regular.ttf -s 0.167
+%% EOF

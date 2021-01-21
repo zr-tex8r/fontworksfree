@@ -1,0 +1,12 @@
+% ly1arampartone.fd
+\DeclareFontFamily{LY1}{arampartone}{}
+\DeclareFontShape{LY1}{arampartone}{m}{n}{<->rampartone-r-ly1}{}
+\DeclareFontShape{LY1}{arampartone}{m}{it}{<->ssub*arampartone/m/sl}{}
+\DeclareFontShape{LY1}{arampartone}{m}{sl}{<->rampartone-ro-ly1}{}
+\DeclareFontShape{LY1}{arampartone}{b}{n}{<->ssub*arampartone/m/n}{}
+\DeclareFontShape{LY1}{arampartone}{b}{it}{<->ssub*arampartone/b/sl}{}
+\DeclareFontShape{LY1}{arampartone}{b}{sl}{<->ssub*arampartone/m/sl}{}
+\DeclareFontShape{LY1}{arampartone}{bx}{n}{<->ssub*arampartone/m/n}{}
+\DeclareFontShape{LY1}{arampartone}{bx}{it}{<->ssub*arampartone/bx/sl}{}
+\DeclareFontShape{LY1}{arampartone}{bx}{sl}{<->ssub*arampartone/m/sl}{}
+%% EOF

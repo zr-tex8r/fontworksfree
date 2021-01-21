@@ -1,0 +1,12 @@
+% ts1arampartone.fd
+\DeclareFontFamily{TS1}{arampartone}{}
+\DeclareFontShape{TS1}{arampartone}{m}{n}{<->rampartone-r-ts1}{}
+\DeclareFontShape{TS1}{arampartone}{m}{it}{<->ssub*arampartone/m/sl}{}
+\DeclareFontShape{TS1}{arampartone}{m}{sl}{<->rampartone-ro-ts1}{}
+\DeclareFontShape{TS1}{arampartone}{b}{n}{<->ssub*arampartone/m/n}{}
+\DeclareFontShape{TS1}{arampartone}{b}{it}{<->ssub*arampartone/b/sl}{}
+\DeclareFontShape{TS1}{arampartone}{b}{sl}{<->ssub*arampartone/m/sl}{}
+\DeclareFontShape{TS1}{arampartone}{bx}{n}{<->ssub*arampartone/m/n}{}
+\DeclareFontShape{TS1}{arampartone}{bx}{it}{<->ssub*arampartone/bx/sl}{}
+\DeclareFontShape{TS1}{arampartone}{bx}{sl}{<->ssub*arampartone/m/sl}{}
+%% EOF

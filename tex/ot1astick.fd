@@ -1,0 +1,12 @@
+% ot1astick.fd
+\DeclareFontFamily{OT1}{astick}{}
+\DeclareFontShape{OT1}{astick}{m}{n}{<->stick-r-ot1}{}
+\DeclareFontShape{OT1}{astick}{m}{it}{<->ssub*astick/m/sl}{}
+\DeclareFontShape{OT1}{astick}{m}{sl}{<->stick-ro-ot1}{}
+\DeclareFontShape{OT1}{astick}{b}{n}{<->ssub*astick/m/n}{}
+\DeclareFontShape{OT1}{astick}{b}{it}{<->ssub*astick/b/sl}{}
+\DeclareFontShape{OT1}{astick}{b}{sl}{<->ssub*astick/m/sl}{}
+\DeclareFontShape{OT1}{astick}{bx}{n}{<->ssub*astick/m/n}{}
+\DeclareFontShape{OT1}{astick}{bx}{it}{<->ssub*astick/bx/sl}{}
+\DeclareFontShape{OT1}{astick}{bx}{sl}{<->ssub*astick/m/sl}{}
+%% EOF

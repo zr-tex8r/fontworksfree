@@ -1,0 +1,12 @@
+% ly1astick.fd
+\DeclareFontFamily{LY1}{astick}{}
+\DeclareFontShape{LY1}{astick}{m}{n}{<->stick-r-ly1}{}
+\DeclareFontShape{LY1}{astick}{m}{it}{<->ssub*astick/m/sl}{}
+\DeclareFontShape{LY1}{astick}{m}{sl}{<->stick-ro-ly1}{}
+\DeclareFontShape{LY1}{astick}{b}{n}{<->ssub*astick/m/n}{}
+\DeclareFontShape{LY1}{astick}{b}{it}{<->ssub*astick/b/sl}{}
+\DeclareFontShape{LY1}{astick}{b}{sl}{<->ssub*astick/m/sl}{}
+\DeclareFontShape{LY1}{astick}{bx}{n}{<->ssub*astick/m/n}{}
+\DeclareFontShape{LY1}{astick}{bx}{it}{<->ssub*astick/bx/sl}{}
+\DeclareFontShape{LY1}{astick}{bx}{sl}{<->ssub*astick/m/sl}{}
+%% EOF
