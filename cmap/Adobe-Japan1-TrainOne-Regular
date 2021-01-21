@@ -1,0 +1,70 @@
+%!PS-Adobe-3.0 Resource-CMap
+%%DocumentNeededResources: ProcSet (CIDInit)
+%%IncludeResource: ProcSet (CIDInit)
+%%BeginResource: CMap (Adobe-Japan1-TrainOne-Regular)
+%%Title: (Adobe-Japan1-TrainOne-Regular Adobe Japan1 7)
+%%Version: 1.000
+%%EndComments
+
+/CIDInit /ProcSet findresource begin
+
+12 dict begin
+
+begincmap
+
+/CIDSystemInfo 3 dict dup begin
+  /Registry (Adobe) def
+  /Ordering (Adobe_Japan1_TrainOne_Regular) def
+  /Supplement 7 def
+end def
+
+/CMapName /Adobe-Japan1-TrainOne-Regular def
+/CMapVersion 1.000 def
+/CMapType 2 def
+
+/WMode 0 def
+
+1 begincodespacerange
+  <0000> <5AFF>
+endcodespacerange
+
+2 beginbfchar
+<248a> <14bd>
+<24a2> <14be>
+endbfchar
+
+26 beginbfrange
+<0000> <00ff> <0000>
+<0100> <01ff> <0100>
+<0200> <02ff> <0200>
+<0300> <03ff> <0300>
+<0400> <04ff> <0400>
+<0500> <05ff> <0500>
+<0600> <06ff> <0600>
+<0700> <07ff> <0700>
+<0800> <08ff> <0800>
+<0900> <09ff> <0900>
+<0a00> <0aff> <0a00>
+<0b00> <0bff> <0b00>
+<0c00> <0cff> <0c00>
+<0d00> <0dff> <0d00>
+<0e00> <0eff> <0e00>
+<0f00> <0ff9> <0f00>
+<1d36> <1dd0> <0ffa>
+<1ecf> <1eff> <1095>
+<1f00> <1f18> <10c6>
+<1f45> <1fff> <10df>
+<2000> <2049> <119a>
+<204c> <205b> <11e4>
+<205e> <20a6> <11f4>
+<220e> <22ff> <123d>
+<2300> <23ff> <132f>
+<2400> <2489> <142f>
+endbfrange
+endcmap
+CMapName currentdict /CMap defineresource pop
+end
+end
+
+%%EndResource
+%%EOF
