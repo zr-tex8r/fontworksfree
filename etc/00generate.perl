@@ -117,17 +117,18 @@ EOT
 \\DeclareFontShape{JY$N}{$fam}{b}{$_}{<->ssub*$fam/bx/$_}{}
 \\DeclareFontShape{JT$N}{$fam}{b}{$_}{<->ssub*$fam/bx/$_}{}
 EOT
+  my $tfam = $fam; $tfam =~ s/[_\d]//g;
   push(@sty_chunk, <<"EOT");
-\\DeclareRobustCommand*{\\j${fam}family}{%
-  \\not\@math\@alphabet\\j${fam}family\\relax\\kanjifamily{$fam}\\selectfont}
-\\DeclareRobustCommand*{\\a${fam}family}{%
-  \\not\@math\@alphabet\\a${fam}family\\relax\\romanfamily{a$fam}\\selectfont}
-\\DeclareRobustCommand*{\\${fam}family}{%
-  \\not\@math\@alphabet\\${fam}family\\relax
+\\DeclareRobustCommand*{\\j${tfam}family}{%
+  \\not\@math\@alphabet\\j${tfam}family\\relax\\kanjifamily{$fam}\\selectfont}
+\\DeclareRobustCommand*{\\a${tfam}family}{%
+  \\not\@math\@alphabet\\a${tfam}family\\relax\\romanfamily{a$fam}\\selectfont}
+\\DeclareRobustCommand*{\\${tfam}family}{%
+  \\not\@math\@alphabet\\${tfam}family\\relax
   \\kanjifamily{$fam}\\romanfamily{a$fam}\\selectfont}
 \\else
-\\DeclareRobustCommand*{\\${fam}family}{%
-  \\not\@math\@alphabet\\${fam}family\\relax\\fontfamily{a$fam}\\selectfont}
+\\DeclareRobustCommand*{\\${tfam}family}{%
+  \\not\@math\@alphabet\\${tfam}family\\relax\\fontfamily{a$fam}\\selectfont}
 \\fi
 EOT
 }
